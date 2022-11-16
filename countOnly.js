@@ -22,8 +22,6 @@ const countOnly = (allItems, itemsToCount) => {
   return results;
 };
 
-
-
 // Test code
 const firstNames = [
   "Karl",
