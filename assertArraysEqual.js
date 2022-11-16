@@ -1,13 +1,19 @@
 // Assertion function
-const assertArraysEqual = (actual, expected) => {
+const eqArrays = (arr1, arr2) => {
   let storedValue = 0;
 
-  for (let key in actual) {
-    if (actual[key] === expected[key])
+  for (let key in arr1) {
+    if (arr1[key] === arr2[key])
       storedValue++;
   }
+  if (storedValue % arr1.length === 0) {
+    return true;
+  }
+  return false;
+};
 
-  if (storedValue % actual.length === 0) {
+const assertArraysEqual = (actual, expected) => {
+  if (eqArrays(actual, expected)) {
     return console.log(`✅ Assertion Passed: ${actual} === ${expected} ✅`);
   }
 
