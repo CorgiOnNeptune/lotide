@@ -41,7 +41,7 @@ const middle = (arr) => {
   }
 
   return middleArr;
-}
+};
 
 
 // Test results

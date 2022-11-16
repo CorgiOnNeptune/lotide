@@ -32,7 +32,7 @@ const without = (source, itemsToRemove) => {
   }
   
   return newArr;
-}
+};
 
 // Test results
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
