@@ -1,15 +1,17 @@
 // Arrays assertion function
 const eqArrays = (arr1, arr2) => {
-  let storedValue = 0;
-
+  if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
+    return false;
+  }
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
   for (let key in arr1) {
-    if (arr1[key] === arr2[key])
-      storedValue++;
+    if (arr1[key] !== arr2[key]) {
+      return false;
+    }
   }
-  if (storedValue % arr1.length === 0) {
-    return true;
-  }
-  return false;
+  return true;
 };
 
 const assertArraysEqual = (actual, expected) => {
@@ -38,4 +40,4 @@ const flatten = (arr) => {
 
 
 // Test results
-console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
