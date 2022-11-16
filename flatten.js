@@ -34,7 +34,7 @@ const flatten = (arr) => {
     }
   }
   return newArr;
-}
+};
 
 
 // Test results
