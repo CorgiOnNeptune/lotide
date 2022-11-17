@@ -32,9 +32,11 @@ const letterPositions = (string) => {
 
     // Skip adding spaces to the object
     if (characterValue !== ' ') {
+      
       // Add the index value to a new key of if not yet defined in the object.
       if (!resultsObject[characterValue]) {
-        resultsObject[characterValue] = [index]
+        resultsObject[characterValue] = [index];
+
         // If the key is already defined, push the additional index value to that character's key value.
       } else {
         resultsObject[characterValue].push(index);

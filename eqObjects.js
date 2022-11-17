@@ -21,7 +21,7 @@ const eqArrays = (arr1, arr2) => {
   return true;
 };
 
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   const object1Keys = Object.keys(object1);
   const object2Keys = Object.keys(object2);
 
