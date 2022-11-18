@@ -27,19 +27,19 @@ const letterPositions = (string) => {
 
   // Iterate over each character of string
   for (const char in string) {
-    const characterValue = string[char];
+    const charValue = string[char];
     const index = parseInt(char);
 
     // Skip adding spaces to the object
-    if (characterValue !== ' ') {
+    if (charValue !== ' ') {
       
       // Add the index value to a new key of if not yet defined in the object.
-      if (!resultsObject[characterValue]) {
-        resultsObject[characterValue] = [index];
+      if (resultsObject[charValue] === undefined) {
+        resultsObject[charValue] = [index];
 
         // If the key is already defined, push the additional index value to that character's key value.
       } else {
-        resultsObject[characterValue].push(index);
+        resultsObject[charValue].push(index);
       }
     }
   }
