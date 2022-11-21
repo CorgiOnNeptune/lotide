@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@justinbennett/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the Lodash library built as a project for my studies at Lighthouse Labs",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/CorgiOnNeptune/lotide.git"
   },
-  "author": "",
+  "author": "Justin Bennett <justinjdbennett@gmail.com> (https://github.com/CorgiOnNeptune)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CorgiOnNeptune/lotide/issues"
