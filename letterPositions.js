@@ -65,3 +65,5 @@ const testObject = {
 };
 
 assertArraysEqual(letterPositions('lighthouse in the house').e, testObject.e);
+
+module.exports = letterPositions;

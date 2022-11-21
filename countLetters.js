@@ -1,4 +1,4 @@
-const countLetter = (str) => {
+const countLetters = (str) => {
   const result = {};
   // Remove non-alpha-numeric characters from string
   str = str.replace(/[^a-z0-9]/gi, '');
@@ -14,7 +14,9 @@ const countLetter = (str) => {
   return result;
 };
 
-console.log(countLetter('LHL'));
-console.log(countLetter('Lighthouse Labs'));
-console.log(countLetter('Diamonds on Neptune!!!!!!'));
-console.log(countLetter('L1ghth0u53 L4b5'));
+console.log(countLetters('LHL'));
+console.log(countLetters('Lighthouse Labs'));
+console.log(countLetters('Diamonds on Neptune!!!!!!'));
+console.log(countLetters('L1ghth0u53 L4b5'));
+
+module.exports = countLetters;

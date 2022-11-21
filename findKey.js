@@ -30,3 +30,5 @@ assertEqual(findKey(movies, x => x.stars === 1), 'Blue Hill');
 assertEqual(findKey(movies, x => x.stars === 3), 'Akaleri');
 assertEqual(findKey(movies, x => x.stars < 2), 'Blue Hill');
 assertEqual(findKey(movies, x => x.stars === 5), undefined);
+
+module.exports = findKey;
