@@ -1,5 +1,5 @@
 const assertEqual = require('../assertEqual');
-const eqArrays = require('../eqArrays');
+const eqArrays = require('../index').eqArrays;
 
 // recursion test code
 assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true); // => true
