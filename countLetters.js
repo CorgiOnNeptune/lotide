@@ -14,9 +14,9 @@ const countLetters = (str) => {
   return result;
 };
 
-console.log(countLetters('LHL'));
-console.log(countLetters('Lighthouse Labs'));
-console.log(countLetters('Diamonds on Neptune!!!!!!'));
-console.log(countLetters('L1ghth0u53 L4b5'));
+// console.log(countLetters('LHL'));
+// console.log(countLetters('Lighthouse Labs'));
+// console.log(countLetters('Diamonds on Neptune!!!!!!'));
+// console.log(countLetters('L1ghth0u53 L4b5'));
 
 module.exports = countLetters;
