@@ -1,32 +1,4 @@
-const eqArrays = require('./eqArrays');
-
-const eqObjects = function (object1, object2) {
-  const object1Keys = Object.keys(object1);
-  const object2Keys = Object.keys(object2);
-
-  // Check if objects have the same amount of keys
-  if (object1Keys.length !== object2Keys.length) {
-    return false;
-  }
-
-  // Check if the values of the keys on each object match.
-  for (const key of object1Keys) {
-
-    // Check if value of the key is an array.
-    // If so, use eqArrays function to compare
-    // the values then return the result.
-    if (Array.isArray(object1[key]) || Array.isArray(object2[key])) {
-      return eqArrays(object1[key], object2[key]);
-    }
-
-    // If value is not an array, check if they match.
-    if (object1[key] !== object2[key]) {
-      return false;
-    }
-  }
-
-  return true;
-};
+const eqObjects = require('./eqObjects');
 
 const assertObjectsEqual = (actual, expected) => {
   const inspect = require('util').inspect;
